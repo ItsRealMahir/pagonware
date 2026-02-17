@@ -1589,15 +1589,15 @@ end
 
 
 function PagonWareLibrary:CreateWindow(Settings)
-	if PagonWare:FindFirstChild('Loading') then
-		if getgenv and not getgenv().pagonwareCached then
-			PagonWare.Enabled = true
-			PagonWare.Loading.Visible = true
-
-			task.wait(1.4)
-			PagonWare.Loading.Visible = false
-		end
-	end
+--	if PagonWare:FindFirstChild('Loading') then
+--		if getgenv and not getgenv().pagonwareCached then
+--			PagonWare.Enabled = true
+--			PagonWare.Loading.Visible = true
+--
+--			task.wait(1.4)
+--			PagonWare.Loading.Visible = false
+--		end
+--	end
 
 	if getgenv then getgenv().pagonwareCached = true end
 
